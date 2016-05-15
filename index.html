@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name=”description” content=”Taskmaster 5000 is a Todo application created by Stephen Mangion”>
+		<meta name="keywords" content="todo application, todo list, task management">
+		<meta name="author" content="Stephen Mangion">
+
+		<title>Todo App</title>
+
+
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
+		<script src="js/local-storage.js"></script>
+		<script src="js/main.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="branding">
+				<div class="wrapper">
+					<h1>Taskmaster 5000</h1>
+				</div>
+			</div>
+		</header> <!-- end of header -->
+
+		<main role=”main”>
+
+			<div class="taskmaster-container">
+
+				<section class="taskmaster-top">
+					
+					<div class="task-heading">
+						<h2>My Tasks</h2>
+					</div> <!-- end of .task-heading -->
+
+					<div class="task-entry">
+
+						<form class="todo-form" id="todo-form">
+							<input id="todo-form-field" type="text" placeholder="Add new task..." autocomplete="off" maxlength="120" autofocus>
+							<button>+</button>
+						</form>
+					</div> <!-- end of .task-entry -->
+
+					<nav>
+						<ul>
+							<li><a data-category="all" href="javascript:void(0);" class="selected">All</a></li>
+							<li><a data-category="todo" href="javascript:void(0);">To do</a></li>
+							<li><a data-category="done" href="javascript:void(0);">Done</a></li>
+							<li><a data-category="removed" href="javascript:void(0);">Removed</a></li>
+						</ul>
+					</nav>
+
+				</section>
+
+				<section class="taskmaster-body">
+										
+					<div class="task-list">
+						<ul></ul>
+					</div> 
+
+				</section>
+
+			</div> <!-- end of taskmaster-container -->
+
+		</main>
+
+		<footer>
+			<div class="wrapper">2015 Copyright TASKMASTER</div>
+		</footer>
+			
+
+
+	</body>
+</html>

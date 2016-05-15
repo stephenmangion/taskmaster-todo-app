@@ -1,0 +1,14 @@
+@mixin placeholder {
+	&.placeholder { @content }
+	&:-moz-placeholder { @content }
+	&::-webkit-input-placeholder { @content }
+}
+
+@mixin clearfix {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
