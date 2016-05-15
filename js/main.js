@@ -24,7 +24,7 @@ function addTodoElement(item) {
     $("<a />", {
         "href": "javascript:void(0);",
         "class" : "button check mark-done-item",
-        "html" : "&#10003;"
+        "html" : "&#10003;" /* &check; cannot be used becuase of IE 9 quirk */ 
     }).appendTo(btnContainer);
 
     taskItemContent = $("<div />", {
